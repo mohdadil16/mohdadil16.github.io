@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="chat.png">
+    <script>
+function appendMessage() {
+    text = document.getElementById("msg").value
+    document.getElementById("msg").value=''
+    console.log("helo")
+  const msgHTML = `
+    <div class="msg right-msg">
+      <div class="msg-img" style="background-image: url(d.png)"></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Debo</div>
+          <div class="msg-info-time">${formatDate(new Date())}</div>
+        </div>
+
+        <div class="msg-text">${text}</div>
+      </div>
+    </div>
+  `;
+  const response = `
+    <div class="msg left-msg">
+      <div class="msg-img" style="background-image: url(r.png)"></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Debo</div>
+          <div class="msg-info-time">${formatDate(new Date())}</div>
+        </div>
+
+        <div class="msg-text">Do share your experience&#128512;</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("abcd").innerHTML += msgHTML;
+  setTimeout(function() {
+  //your code to be executed after 1 second
+  document.getElementById("xyz").innerHTML += response;
+}, 1000);
+  
+}
+
+
+
+function formatDate(date) {
+  const h = "0" + date.getHours();
+  const m = "0" + date.getMinutes();
+
+  return `${h.slice(-2)}:${m.slice(-2)}`;
+}
+</script>
+<body>
+
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-comment-alt" style="text-align: center;"></i> Victoria's Secret Collective Chat
+          </div>
+          <div class="msger-header-options">
+            <span><i class="fas fa-cog"></i></span>
+          </div>
+        </header>
+      
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(r.png)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Rajeshwari</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+      
+              <div class="msg-text">
+                This winter stay cosy and fashionable with some amazing monochromatic looks that are just right for the season
+              </div>
+            </div>
+          </div>
+      
+          <div class="msg right-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(d.png)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Debo</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+      
+              <div class="msg-text">
+                I have really been thinking about shopping this item.
+              </div>
+            </div>
+           
+          </div>
+          <div class="msg left-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(s.png)"
+            ></div>
+          <div class="msg-bubble" style="background: rgb(7, 202, 176);">
+            <div class="msg-info">
+              <div class="msg-info-name">Saikat</div>
+              <div class="msg-info-time">12:55</div>
+            </div>
+    
+            <div class="msg-text">
+              This item got shipped today and I just love everything about it.
+            </div>
+          </div>
+          </div>
+          <div class="msg right-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(d.png)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Debo</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+      
+              <div class="msg-text">
+               Going to order rigjht away. Hurray!
+              </div>
+            </div>
+           
+          </div>
+<div id="abcd"></div>
+<div id="xyz"></div>
+        </main>
+      
+        <div class="msger-inputarea">
+          <input type="text"  id ="msg" class="msger-input" placeholder="Enter your message...">
+          <button onclick = "appendMessage()" class="msger-send-btn">Send</button>
+        </div>
+      </section>
+
+</body>
+</html>
