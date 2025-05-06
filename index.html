@@ -1,437 +1,257 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Adil">
 
-	<!--- basic page needs
-   ================================================== -->
-	<meta charset="utf-8">
-	<title>Welcome</title>
-	<meta name="description" content="">
-	<meta name="author" content="Adil">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
 
-	<!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
-
-
-
-	<!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body id="top">
 
-	<!-- header 
-   ================================================== -->
-	<header>
+  <!-- Intro Section -->
+  <section id="intro">
+    <div class="intro-overlay"></div>
 
-	</header> <!-- /header -->
+    <div class="intro-content">
+      <div class="row">
+        <div class="col-twelve">
+          <h5>Hello, World.</h5>
+          <h1>I'm Mohd Adil.</h1>
+          <p class="intro-position">
+            <span>Full Stack Developer</span>
+            <span>Analytics</span>
+            <span>Python</span>
+            <span>Database</span>
+            <span>Agile</span>
+          </p>
+          <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+        </div>
+      </div>
+    </div>
 
-	<!-- intro section
-   ================================================== -->
-	<section id="intro">
+    <ul class="intro-social">
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/adil_kishwer/"><i class="fa fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/mohd-adil-rasheed/"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </section>
 
-		<div class="intro-overlay"></div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>About</h5>
+        <h1>Let me introduce myself.</h1>
+        <div class="intro-info">
+          <img src="profile-pic.png" alt="Profile Picture">
+          <p class="lead">Full-stack software engineer with experience in building scalable systems across fintech, retail, and enterprise platforms.
+			Skilled in Java, Go, Spring Boot, and React, with a strong focus on backend architecture and API development.
+			Currently pursuing an MSc in Business Analytics at Warwick Business School to merge technical expertise with data-driven strategy.</p>
+        </div>
+      </div>
+    </div>
 
-		<div class="intro-content">
-			<div class="row">
+    <div class="row about-content">
+      <div class="col-six tab-full">
+        <h3>Profile</h3>
+        <p>Currently pursuing an MSc in Business Analytics at Warwick Business School.</p>
+        <ul class="info-list">
+          <li><strong>Full name:</strong><span>Mohd Adil Rasheed</span></li>
+          <li><strong>Birth Date:</strong><span>August 12, 1997</span></li>
+          <li><strong>Job:</strong><span>Senior Full-Stack Developer</span></li>
+          <li><strong>Portfolio:</strong><span>https://goo.gl/i7nY6s</span></li>
+          <li><strong>Email:</strong><span>mohdadil16@outlook.com</span></li>
+        </ul>
+      </div>
 
-				<div class="col-twelve">
+      <div class="col-six tab-full">
+        <h3>Skills</h3>
+        <p>Programming Languages: Java, Go, Python<br>Frameworks: Angular, Vue, Spring<br></p>
+        <ul class="skill-bars">
+          <li><div class="progress percent70"><span>70%</span></div><strong>Java</strong></li>
+		  <li><div class="progress percent70"><span>60%</span></div><strong>Python</strong></li>
+          <li><div class="progress percent65"><span>65%</span></div><strong>Spring Boot</strong></li>
+          <li><div class="progress percent60"><span>60%</span></div><strong>Databases</strong></li>
+          <li><div class="progress percent65"><span>65%</span></div><strong>Angular</strong></li>
+        </ul>
+      </div>
+    </div>
 
-					<h5>Hello, World.</h5>
-					<h1>I'm Mohd Adil.</h1>
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" class="button stroke smoothscroll">Hire Me</a>
+        <a href="https://github.com/mohdadil16/EmployeeOne/raw/master/Mohd_Adil.pdf" class="button button-primary" download="Adil_CV">Download Resume</a>
+      </div>
+    </div>
+  </section>
 
-					<p class="intro-position">
-						<span>Full Stack Developer</span>
-						<span>Spring Boot</span>
-						<span>ForgeRock</span>
-						<span>Apache Cassandra</span>
-						<span>Apache Kafka</span>
-					</p>
+  <!-- Resume Section -->
+  <section id="resume" class="grey-section">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Resume</h5>
+        <h1>More of my credentials.</h1>
+        <p class="lead">A Full-stack developer specializing in Java, Spring Boot, and scalable backend systems across fintech and enterprise domains.
+			Currently pursuing an MSc in Business Analytics at Warwick Business School to bridge software engineering with strategic, data-driven decision-making.</p>
+      </div>
+    </div>
 
-					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header"><h2>Work Experience</h2></div>
+      <div class="col-twelve">
+        <div class="timeline-wrap">
+			<div class="timeline-block">
+				<div class="timeline-ico"><i class="fa fa-briefcase"></i></div>
+				<div class="timeline-header">
+				  <h3>Senior Software Engineer</h3>
+				  <p>Sep 2023 - Aug 2024</p>
 				</div>
-
-			</div>
-		</div> <!-- /intro-content -->
-
-		<ul class="intro-social">
-			<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-			<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-			<li><a target="_blank" href="https://www.instagram.com/adil_kishwer/"><i class="fa fa-instagram"></i></a></li>
-			<li><a target="_blank" href="https://www.linkedin.com/in/mohd-adil-rasheed/"><i class="fa fa-linkedin"></i></a></li>
-		</ul> <!-- /intro-social -->
-
-	</section> <!-- /intro -->
-
-
-	<!-- about section
-   ================================================== -->
-	<section id="about">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>About</h5>
-				<h1>Let me introduce myself.</h1>
-
-				<div class="intro-info">
-
-					<img src="profile-pic.png" alt="Profile Picture">
-
-					<p class="lead">Experienced Full Stack Engineer with a demonstrated history of working in the information
-						technology and services industry. Skilled in Team Building, Cloud Computing, Identity and Access Management,
-						Cloud Computing IaaS, and Java.</p>
+				<div class="timeline-content">
+				  <h4>Brightly Software, a Siemens Company</h4>
+				  <p>Led a team of 3 to build scalable APIs for inventory and asset management. Co-designed a new UI and earned company-wide Awardco recognition for innovation.</p>
 				</div>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row about-content">
-
-			<div class="col-six tab-full">
-
-				<h3>Profile</h3>
-				<p>Working as Java Developer and have worked different techonologies and worked on POC's.</p>
-
-				<ul class="info-list">
-					<li>
-						<strong>Full name:</strong>
-						<span>Mohd Adil Rasheed</span>
-					</li>
-					<li>
-						<strong>Birth Date:</strong>
-						<span>August 12, 1997</span>
-					</li>
-					<li>
-						<strong>Job:</strong>
-						<span>Java Developer, ForgeRock Developer</span>
-					</li>
-					<li>
-						<strong>Website:</strong>
-						<span>https://goo.gl/i7nY6s</span>
-					</li>
-					<li>
-						<strong>Email:</strong>
-						<span>mohdadil16@gmail.com</span>
-					</li>
-
-				</ul> <!-- /info-list -->
-
-			</div>
-
-			<div class="col-six tab-full">
-
-				<h3>Skills</h3>
-				<p>Programming Languages: Java, C.<br>
-					Angular, Spring.<br>
-					IAM tools with Hands on ForgeRock Identity Platform.
-				</p>
-
-				<ul class="skill-bars">
-					<li>
-						<div class="progress percent70"><span>70%</span></div>
-						<strong>Java</strong>
-					</li>
-					<li>
-						<div class="progress percent65"><span>65%</span></div>
-						<strong>Spring Boot</strong>
-					</li>
-					<li>
-						<div class="progress percent70"><span>70%</span></div>
-						<strong>ForgeRock</strong>
-					</li>
-					<li>
-						<div class="progress percent50"><span>50%</span></div>
-						<strong>Apache Kafka</strong>
-					</li>
-					<li>
-						<div class="progress percent60"><span>60%</span></div>
-						<strong>Cassandra</strong>
-					</li>
-					<li>
-
-						<div class="progress percent65"><span>65%</span></div>
-						<strong>Angular</strong>
-					</li>
-
-				</ul> <!-- /skill-bars -->
-
-			</div>
-
-		</div>
-
-		<div class="row button-section">
-			<div class="col-twelve">
-				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-				<a href="https://github.com/mohdadil16/EmployeeOne/raw/master/2018.pdf" title="Download CV" class="button button-primary"
-				 download="Adil_CV">Download CV</a>
-			</div>
-		</div>
-
-	</section> <!-- /process-->
-
-
-	<!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Resume</h5>
-				<h1>More of my credentials.</h1>
-
-				<p class="lead">I come from small town Azamgarh which lies in the eastern region of Uttar Pradesh, India.
-					<br>Currently I reside in Bangalore working for Mindtree Ltd.
-				</p>
-
-			</div>
-		</div> <!-- /section-intro-->
-
-		<div class="row resume-timeline">
-
-			<div class="col-twelve resume-header">
-
-				<h2>Work Experience</h2>
-
-			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
-
-				<div class="timeline-wrap">
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Full Stack Developer</h3>
-							<p>February 2018 - Present</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Mindtree Ltd.</h4>
-							<p>Trained as Full Stack Java Developer.<br>
-								Worked on Identity and Access Management with the help ForgeRock.<br>
-								Worked on getting logs of Cassandra and pushing the the metadata to Apache Kafka.<br>
-								Worked on Spring boot and Microservices.
-							</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Cloud Research Analyst</h3>
-							<p>November 2017 - February 2018</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Netskope</h4>
-							<p>Worked here as an intern and was into researching how safe the vendors are on cloud which Netskope clients
-								are using</p>
-						</div>
-
-					</div>
-
-				</div> <!-- /timeline-wrap -->
-
-			</div> <!-- /col-twelve -->
-
-		</div> <!-- /resume-timeline -->
-
-		<div class="row resume-timeline">
-
-			<div class="col-twelve resume-header">
-
-				<h2>Education</h2>
-
-			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
-
-				<div class="timeline-wrap">
-
-					<div class="timeline-block">
-
-
-
-						<div class="timeline-block">
-
-							<div class="timeline-ico">
-								<i class="fa fa-briefcase"></i>
-							</div>
-
-							<div class="timeline-header">
-								<h3>Bachelor Degree</h3>
-								<p>August 2013 - June 2017</p>
-							</div>
-
-							<div class="timeline-content">
-								<h4>Dr. A.P.J. Abdul Kalam Technical University </h4>
-								<p>Bachelor of Technology from Shri Ramswaroop Memorial College of Engg. and Management with specialisation in
-									Computer Science
-									.</p>
-							</div>
-
-						</div> <!-- /timeline-block -->
-
-						<div class="timeline-block">
-
-							<div class="timeline-ico">
-								<i class="fa fa-briefcase"></i>
-							</div>
-
-							<div class="timeline-header">
-								<h3>High School</h3>
-								<p>April 2011 - June 2013</p>
-							</div>
-
-							<div class="timeline-content">
-								<h4>ISC</h4>
-								<p>I did my Pre University College from Jyoti Niketan School and there I majored in Mathematics and Computer
-									Applications.</p>
-							</div>
-
-						</div> <!-- /timeline-block -->
-
-					</div> <!-- /timeline-wrap -->
-
-				</div> <!-- /col-twelve -->
-
-			</div> <!-- /resume-timeline -->
-
-	</section> <!-- /features -->
-
-	<!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Contact</h5><br>
-				<h1>I'd Love To Hear From You.</h1>
-
-				<p class="lead">Thank you for bearing with me and coming this far.&#9786 <br>
-					Please feel free to get in touch or drop by for a cup of coffee.
-				</p>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row contact-info">
-
-			<div class="col-four tab-full">
-
-				<div class="icon"><a class="adam-custom" href="https://www.google.com/maps/place/Akshay+Properties/@12.905378,77.4856506,17z/data=!4m5!3m4!1s0x3bae3f2315286465:0xca96a97a107f3741!8m2!3d12.9053728!4d77.4878393" target="_blank">
-					<i class="fa fa-map-marker"></i></a>
+			  </div>
+			  
+			  <div class="timeline-block">
+				<div class="timeline-ico"><i class="fa fa-briefcase"></i></div>
+				<div class="timeline-header">
+				  <h3>Senior Software Engineer</h3>
+				  <p>May 2022 - Sep 2023</p>
 				</div>
-
-				<h5>Where to find me</h5>
-				
-
-				<p>
-					Ramanuja Encalve Apartments<br>
-					Kodipalya-560060<br>
-					Bangalore</p>
-					
-
-			</div>
-
-			<div class="col-four tab-full collapse">
-
-				<div class="icon">
-				<a  href="mailto:mohdadil16@gmail.com" target="_top">
-					<i class="fa fa-envelope-o"></i>
-					</a>
+				<div class="timeline-content">
+				  <h4>One 97 Communications (Paytm)</h4>
+				  <p>Designed middleware APIs for integration with 10+ external applications. Developed a timeout center service to improve transaction lifecycle tracking and reliability.</p>
 				</div>
-
-				<h5>Email Me At</h5>
-
-				<p>
-				
-				<a class="adam-custom" href="mailto:mohdadil16@gmail.com" target="_top">mohdadil16@gmail.com</a>
-				
-				</p>
-			</div>
-
-			<div class="col-four tab-full">
-
-				<div class="icon">
-				<a href="tel:919559570046">
-					<i class="fa fa-phone"></i>
-					</a>
+			  </div>
+			  
+			  <div class="timeline-block">
+				<div class="timeline-ico"><i class="fa fa-briefcase"></i></div>
+				<div class="timeline-header">
+				  <h3>Senior Software Engineer</h3>
+				  <p>Jan 2021 - May 2022</p>
 				</div>
-
-				<h5>Call Me At</h5>
-				<p>
-					Mobile: (+91) 9559570046<br>
-				</p>
-
-			</div>
-
-		</div> <!-- /contact-info -->
-
-	</section> <!-- /contact -->
-
-
-	<!-- footer
-   ================================================== -->
-
-	<footer>
-		<div class="row">
-
-			<div class="col-six tab-full pull-right social">
-
-				<ul class="footer-social">
-					<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-					<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-					<li><a target="_blank" href="https://www.instagram.com/adil_kishwer/"><i class="fa fa-instagram"></i></a></li>
-					<li><a target="_blank" href="https://www.linkedin.com/in/mohd-adil-rasheed/"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-
-			</div>
-
-			<div class="col-six tab-full">
-				<div class="copyright">
-					<span>© Copyright Mohd Adil Rasheed.</span>
+				<div class="timeline-content">
+				  <h4>Victoria’s Secret & Co.</h4>
+				  <p>Built a front-end tool for identifying and removing stale product data, improving e-commerce freshness and reducing operational delays.</p>
 				</div>
-			</div>
+			  </div>
+			  
+			  <div class="timeline-block">
+				<div class="timeline-ico"><i class="fa fa-briefcase"></i></div>
+				<div class="timeline-header">
+				  <h3>Software Engineer</h3>
+				  <p>Feb 2018 - Jan 2021</p>
+				</div>
+				<div class="timeline-content">
+				  <h4>Mindtree Ltd. (now LTI Mindtree)</h4>
+				  <p>Trained as a Full Stack Java Developer. Worked on IAM using ForgeRock, metadata logging from Cassandra to Kafka, and built microservices using Spring Boot. Co-developed a logging system to enhance communication across internal applications.</p>
+				</div>
+			  </div>
+        </div>
+      </div>
+    </div>
 
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-			</div>
+    <!-- Education -->
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header"><h2>Education</h2></div>
+      <div class="col-twelve">
+        <div class="timeline-wrap">
+			<div class="timeline-block">
+				<div class="timeline-ico"><i class="fa fa-graduation-cap"></i></div>
+				<div class="timeline-header">
+				  <h3>MSc Business Analytics</h3>
+				  <p>Sep 2024 - Sep 2025</p>
+				</div>
+				<div class="timeline-content">
+				  <h4>Warwick Business School, University of Warwick</h4>
+				  <p>Pursuing a Master’s in Business Analytics to integrate software engineering with data-driven business strategy and decision-making.</p>
+				</div>
+			  </div>	
 
-		</div> <!-- /row -->
-	</footer>
 
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
+          <div class="timeline-block">
+            <div class="timeline-ico"><i class="fa fa-graduation-cap"></i></div>
+            <div class="timeline-header"><h3>Bachelor’s Degree</h3><p>Aug 2013 - June 2017</p></div>
+            <div class="timeline-content">
+              <h4>Dr. A.P.J. Abdul Kalam Technical University</h4>
+              <p>Bachelor of Technology in Computer Science from Shri Ramswaroop Memorial College of Engineering & Management.</p>
+            </div>
+          </div>
 
+          <div class="timeline-block">
+            <div class="timeline-ico"><i class="fa fa-graduation-cap"></i></div>
+            <div class="timeline-header"><h3>High School</h3><p>Apr 2011 - June 2013</p></div>
+            <div class="timeline-content">
+              <h4>ISC, Jyoti Niketan School</h4>
+              <p>Pre-University with majors in Mathematics and Computer Applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Contact</h5>
+        <h1>I'd Love To Hear From You.</h1>
+        <p class="lead">Thanks for visiting my profile. I'm always open to meaningful connections and conversations—feel free to reach out.</p>
+      </div>
+    </div>
+
+    <div class="row contact-info">
+      <div class="col-four tab-full">
+        <div class="icon"><a href="https://maps.app.goo.gl/a6kNjrRJQAdNNrw2A" target="_blank"><i class="fa fa-map-marker"></i></a></div>
+        <h5>Where to find me</h5>
+        <p>Corporation Village<br>Coventry, CV1 1GU<br>United Kingdom</p>
+      </div>
+
+      <div class="col-four tab-full collapse">
+        <div class="icon"><a href="mailto:mohdadil16@outlook.com"><i class="fa fa-envelope-o"></i></a></div>
+        <h5>Email Me At</h5>
+        <p><a href="mailto:mohdadil16@outlook.com" style="color: #888888;">mohdadil16@outlook.com</a></p>
+      </div>
+
+      <div class="col-four tab-full">
+        <div class="icon"><a href="tel:919559570046"><i class="fa fa-phone"></i></a></div>
+        <h5>Call Me At</h5>
+        <p>Mobile: (+44) 7378544899</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-six tab-full pull-right social">
+        <ul class="footer-social">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/adil_kishwer/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-adil-rasheed/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-six tab-full">
+        <div class="copyright">
+          <span>© Copyright Mohd Adil Rasheed.</span>
+        </div>
+      </div>
+      <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
